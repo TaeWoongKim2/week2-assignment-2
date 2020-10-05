@@ -3,7 +3,7 @@ import Todo from './Todo';
 
 const isEmpty = (array) => array.length === 0;
 
-function TodoList({ todoList, onClickDelete }) {
+export default function TodoList({ todoList, onClickDelete }) {
   if (isEmpty(todoList)) {
     return <div>할 일이 없어요!</div>;
   }
@@ -23,5 +23,3 @@ function TodoList({ todoList, onClickDelete }) {
     </div>
   );
 }
-
-export default TodoList;

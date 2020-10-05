@@ -2,7 +2,7 @@ import React from 'react';
 import TodoInput from './TodoInput';
 import TodoList from './TodoList';
 
-function TodoPage({
+export default function TodoPage({
   todoTitle,
   todoList,
   onChangeTitle,
@@ -24,5 +24,3 @@ function TodoPage({
     </div>
   );
 }
-
-export default TodoPage;

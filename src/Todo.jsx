@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Todo({
+export default function Todo({
   todo: { id, title },
   onClickDelete,
 }) {
@@ -13,5 +13,3 @@ function Todo({
     </div>
   );
 }
-
-export default Todo;

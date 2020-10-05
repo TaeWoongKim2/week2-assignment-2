@@ -1,6 +1,6 @@
 import React from 'react';
 
-function TodoInput({
+export default function TodoInput({
   value,
   onChangeTitle,
   onClickAdd,
@@ -19,5 +19,3 @@ function TodoInput({
     </div>
   );
 }
-
-export default TodoInput;
