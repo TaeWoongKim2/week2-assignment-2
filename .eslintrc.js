@@ -2,6 +2,7 @@ module.exports = {
   env: {
     browser: true,
     es6: true,
+    jest: true,
   },
   extends: [
     'plugin:react/recommended',
@@ -49,7 +50,7 @@ module.exports = {
     'linebreak-style': 'off',
     'import/no-extraneous-dependencies': [
       'error',
-      { devDependencies: ['codecept.conf.js'] },
+      { devDependencies: ['**/*.test.js', '**/*.test.jsx', '**/*.setup.js', '**/*.conf.js'] },
     ],
   },
 };
